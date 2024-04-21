@@ -3,13 +3,13 @@
 
     <div class="container-sm my-5">
         <div class="row justify-content-center">
-            <div class="p-5 bg-secondary rounded-3 col-xl-4 border">
+            <div class="p-5 rounded-3 col-xl-4 border" style="background-color:rgb(255,188,224)">
                 <div class="mb-3 text-center">
-                    <h1><i class="bi bi-person-hearts text-warning"></i></h1>
+                    <h1><i class="bi bi-person-hearts" style="color: maroon"></i></h1>
                     <h4>Detail Employee</h4>
                 </div>
                 <hr>
-                <div class="row text-warning">
+                <div class="row text-danger">
                     <div class="col-md-12 mb-3">
                         <label for="firstName" class="form-label">First Name</label>
                         <h5>{{ $employee->firstname }}</h5>
@@ -34,7 +34,7 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-12 d-grid">
-                        <a href="{{ route('employees.index') }}" class="btn btn-outline-light btn-lg mt-3"><i class="bi-arrow-left-circle me-2"></i> Back</a>
+                        <a href="{{ route('employees.index') }}" class="btn btn-outline-danger btn-lg mt-3"><i class="bi-arrow-left-circle me-2"></i> Back</a>
                     </div>
                 </div>
             </div>
