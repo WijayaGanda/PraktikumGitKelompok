@@ -8,14 +8,14 @@
             </div>
             <div class="col-lg-3 col-xl-2">
                 <div class="d-grid gap-2">
-                    <a href="{{ route('employees.create') }}" class="btn btn-primary">Create Employee</a>
+                    <a href="{{ route('employees.create') }}" class="btn" style="background-color: maroon; color:white">Create Employee</a>
                 </div>
             </div>
         </div>
         <hr>
         <div class="table-responsive border p-3 rounded-3">
-            <table class="table table-bordered table-hover table-striped mb-0 bg-white">
-                <thead>
+            <table class="table table-bordered mb-0">
+                <thead style="background-color: maroon; color: white;">
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>
@@ -25,7 +25,7 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody style="background-color: rgb(255, 188, 224); color: maroon">
                     @foreach ($employees as $employee)
                         <tr>
                             <td>{{ $employee->firstname }}</td>
